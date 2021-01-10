@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+body {
+  background: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.488rem;
+}
+
+h2 {
+  font-size: 2.074rem;
+}
+
+h3 {
+  font-size: 1.728rem;
+}
+
+h4 {
+  font-size: 1.44rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+small,
+.text_small {
+  font-size: 0.833rem;
+}
+
+section {
+  padding: 1rem;
+}
+
+section:nth-of-type(odd),
+article:nth-of-type(odd) {
+  background-color: #d3d3d3;
+}
+
+section:nth-of-type(even),
+article:nth-of-type(even) {
+  background-color: #9b9b9b;
+}
+
+th, tr, td {
+  min-height: 1.25rem;
+}
+
+table {
+  overflow-x: auto;
+  max-width: 100%;
+}
+/*
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+*/
+.main-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9b9b9b;
+}
+
+.main-nav > ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-nav > ul > li {
+  margin-right: 1rem;
+}
+/*
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-inline-size: 78ch;
+}
+
+body > * {
+  width: 100%;
+}
+*/
+
+.stack > * + * {
+  margin-top: 1rem;
+}
+
+.stack > label {
+  display: block;
+}
+
+.stack p {
+  margin-bottom: 0.025rem;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 1rem;
+  margin: 0 1rem;
+}
+
+.hero {
+  grid-column: 1 / 5;
+  grid-row: 1 / 3;
+}
+
+.col.span1 {
+  grid-column: auto / span 1;
+}
+
+.col.span2 {
+  grid-column: auto / span 2;
+}
+
+.col.span3 {
+  grid-column: auto / span 3;
+}
+
+.col.span4 {
+  grid-column: auto / span 4;
+}
+
+.row1 {
+  grid-row: auto / span 1;
+}
+
+footer {
+  background-color: #9b9b9b;
+}
