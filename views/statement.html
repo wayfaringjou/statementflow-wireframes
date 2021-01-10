@@ -14,30 +14,19 @@
     <nav class="main-nav">
       <h2>SF</h2>
       <ul>
-        <li>Home</li>
-        <li>Worksheets</li>
-        <li>Login</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="worksheets.html">Worksheets</a></li>
       </ul>
     </nav>
     <header>
       <h2>Statement</h2>
     </header>
-    <main class="grid-wrapper">
-      <section class="col span4">
-        <h3>UNDERSTANDING OF THE INDIVIDUAL’S FINANCIAL ACTIVITIES</h3>
-        <form action="">
-          <fieldset>
-            <label for="question1">
-              <p>What are the primary sources of revenues and expenditures?</p>
-              <input type="text" name="question1" id="question1" />
-            </label>
-          </fieldset>
-        </form>
-      </section>
-      <section class="col span4">
-        <h3>CASH</h3>
-        <form action="">
-          <fieldset>
+    <main>
+      <section id="assets" class="grid-wrapper">
+        <h3>Assets</h3>
+        <section class="col span4" id="cash">
+          <h4>Cash</h4>
+          <form action="">
             <label for="">
               <p>
                 Record the individual’s checkbook or passbook balance in all
@@ -45,14 +34,65 @@
                 obtain copies of bank reconciliations.
               </p>
             </label>
-            <table contenteditable="true">
-              <thead>
+            <div class="table-wrapper">
+              <table contenteditable="true">
+                <thead>
+                  <tr>
+                    <th>Bank Name</th>
+                    <th>Account Title</th>
+                    <th>Statement Date</th>
+                    <th>Restricted Yes/No</th>
+                    <th>Reconciled Balance</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                  </tr>
+                  <tr>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                  </tr>
+                  <tr>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </form>
+        </section>
+        <section class="col span4" id="Accounts">
+          <h4>Accounts and notes receivable</h4>
+          <p>
+            Inquire if individual has any personal accounts or notes receivable.
+            Obtain the following facts:
+          </p>
+          <table>
+            <thead>
               <tr>
-                <th>Bank Name</th>
-                <th>Account Title</th>
-                <th>Statement Date</th>
-                <th>Restricted Yes/No</th>
-                <th>Reconciled Balance</th>
+                <th>Debtor's Name</th>
+                <th>Due Date</th>
+                <th>Interest Rate</th>
+                <th>Tax Basis</th>
+                <th>Cost Basis</th>
               </tr>
             </thead>
             <tbody>
@@ -64,16 +104,144 @@
                 <td>0.00</td>
               </tr>
               <tr>
-                <td></td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td>0.00</td>
+                <td>0.00</td>
               </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+      <section id="liabilities" class="grid-wrapper">
+        <h3>Liabilities</h3>
+        <section id="notes-payable" class="col span4">
+          <h4>Notes Payable</h4>
+          <p>
+            Obtain the following information for notes payable other than
+            residential mortgage and other real estate loans.
+          </p>
+          <div class="table-wrapper">
+            <table contenteditable="true">
+              <thead>
+                <tr>
+                  <th>Bank Name</th>
+                  <th>Account Title</th>
+                  <th>Statement Date</th>
+                  <th>Restricted Yes/No</th>
+                  <th>Reconciled Balance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                </tr>
+                <tr>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                </tr>
+                <tr>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>0.00</td>
+                </tr>
               </tbody>
             </table>
-          </fieldset>
-        </form>
+          </div>
+        </section>
+      </section>
+      <section id="net-worth" class="grid-wrapper">
+        <h3 class="col span4">Net worth</h3>
+        <section id="unrealized-inc" class="col span4">
+          <h4>Unrealized increases in net worth</h4>
+          <div class="table-wrapper">
+            <table>
+              <tr>
+                <td colspan="4">
+                  <p>REALIZED DECREASES IN NET WORTH</p>
+                </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <p>Current year total income tax expense</p>
+                </td>
+                <td></td>
+                <td></td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <p>Interest expense</p>
+                </td>
+                <td> </td>
+                <td> </td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <p>Real estate taxes</p>
+                </td>
+                <td> </td>
+                <td> </td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <p>Losses on sales of investments</p>
+                </td>
+                <td> </td>
+                <td> </td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <p>NET INCREASE (DECREASE) IN NET WORTH</p>
+                </td>
+                <td> </td>
+                <td> </td>
+                <td>0.00</td>
+              </tr>
+            </table>
+          </div>
+        </section>
       </section>
     </main>
   </body>

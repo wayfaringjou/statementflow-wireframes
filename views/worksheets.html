@@ -15,22 +15,32 @@
     <nav class="main-nav">
       <h2>SF</h2>
       <ul>
-        <li>Home</li>
-        <li>Worksheets</li>
-        <li>Login</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="worksheets.html">Worksheets</a></li>
       </ul>
     </nav>
     <header><h2>Worksheets</h2></header>
     <main>
       <div class="grid-wrapper">
-        <section id="controls" class="col span2">
+        <section id="controls" class="col span4">
           <article>
-            <span>icon</span>
-            <button>Create new statement</button>
+            <span>[icon]</span>
+            <button onclick="location.href='./statement.html'">
+              Create new statement
+            </button>
           </article>
         </section>
         <section class="grid-wrapper col span4" id="history">
           <header class="col span4"><p>Statement history</p></header>
+          <section class="col span4 row1">
+            <form>
+              <label for="search">
+                <p>Search past worksheets:</p>
+                <input type="text" name="search" id="search" />
+              </label>
+            </form>
+            <p>Sort by: <a href="#">Client</a> <a href="#">Date</a></p>
+          </section>
           <article class="col span4 row1">
             <p>Modified: 02/02/2021 Client: John Smith Status: Complete</p>
           </article>
