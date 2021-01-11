@@ -11,7 +11,7 @@
     <title>Statementflow - Statement</title>
   </head>
   <body>
-    <nav class="main-nav">
+    <nav class="main-nav no-print">
       <h2>SF</h2>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -26,7 +26,7 @@
         <h3>Assets</h3>
         <section class="col span4" id="cash">
           <h4>Cash</h4>
-          <form action="">
+          <form action="" class="no-print">
             <label for="">
               <p>
                 Record the individual’s checkbook or passbook balance in all
@@ -72,7 +72,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td>0.00</td>
+                    <td id="cash-total">0.00</td>
                   </tr>
                 </tbody>
               </table>
@@ -235,13 +235,25 @@
                 <td colspan="4">
                   <p>NET INCREASE (DECREASE) IN NET WORTH</p>
                 </td>
-                <td> </td>
-                <td> </td>
+                <td></td>
+                <td></td>
                 <td>0.00</td>
               </tr>
             </table>
           </div>
         </section>
+      </section>
+      <section id="controls" class="col span4">
+        <article>
+          <span>[icon]</span>
+          <button>
+            Save
+          </button>
+          <span>[icon]</span>
+          <button>
+            Generate docx
+          </button>
+        </article>
       </section>
     </main>
   </body>
